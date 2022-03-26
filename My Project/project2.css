@@ -9,8 +9,6 @@
   --dark: rgba(28, 29, 33, 1);
   --light-grey: rgb(224, 221, 224);
 }
-
-
 header {
   padding: 15px 15px 15px 0;
   display: flex;
@@ -26,7 +24,6 @@ nav {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 nav a {
   text-decoration: none;
   padding: 5px 10px;
@@ -45,4 +42,69 @@ nav a:hover {
 }
 nav a:last-child {
   margin-right: 0;
+}
+
+
+
+
+.hero-banner {
+  background: rgb(4, 58, 94);
+  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--blue) 100%);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: soft-light;
+  min-height: 30vh;
+  color: var(--light-grey);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-banner div {
+  flex: 0 0 90%;
+}
+
+.hero-banner h2 {
+  background-color: var(--dark-green);
+  color: var(--gray);
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 2.3rem;
+  line-height: 1.2;
+  display: inline;
+}
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section > h2 {
+  flex: 0 0 20%;
+  text-align: right;
+  padding-right: 15px;
+  border-right: 4px solid var(--blue);
+  font-size: 4vw;
+  line-height: 1.1;
+}
+
+.page-section > div {
+  flex: 0 0 77%;
+}
+
+.page-section p {
+  margin-bottom: 20px;
 }
